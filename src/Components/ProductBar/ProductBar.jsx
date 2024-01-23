@@ -18,7 +18,7 @@ export const ProductBar = () => {
           alt="clothes"
         />
       </div>
-      <div className="mob:flex mob:flex-col mob:mx-2 mob:my-4 grid grid-cols-3 my-12 mx-40 p-8 border-black ">
+      <div className="mob:flex mob:flex-col mob:mx-2 mob:my-4 grid grid-cols-3 my-12 lg:mx-40 p-8 border-black sm:mx-2">
         {storeData.map((product, index) => {
           if (itemNum < 6) {
             itemNum++;
