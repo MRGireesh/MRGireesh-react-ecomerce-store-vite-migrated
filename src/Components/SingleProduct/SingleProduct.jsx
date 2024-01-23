@@ -21,16 +21,16 @@ export const SingleProduct = () => {
         .filter((product) => product.id === id)
         .map((item, index) => {
           return (
-            <div key={index} className="flex justify-center items-center py-10">
-              <div className="pl-44 grow-[4]">
+            <div key={index} className="flex justify-center items-center py-10 mob:py-4 mob:flex-col">
+              <div className=" flex justify-center grow-[4]">
                 <img
-                  className="h-[500px] rounded-lg"
+                  className="h-[500px] rounded-lg "
                   src={item.img}
                   alt={item.name}
                 ></img>
               </div>
               <div className="grow-[4]">
-                <div className="max-w-lg">
+                <div className="max-w-lg mob:text-center mx-5">
                   <h5 className="text-2xl font-inter font-bold tracking-normal leading-none pb-4">
                     {item.name}
                   </h5>

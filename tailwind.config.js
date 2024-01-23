@@ -7,7 +7,9 @@ module.exports = withMT({
       'sm' : '640px',
       'md' : '778px',
       'lg' : '1024px',
-      'xl' : '1280px'
+      'xl' : '1280px',
+      'mob' : {'max':'640px'}
+      
     },
     
     extend: {

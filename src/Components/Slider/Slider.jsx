@@ -28,8 +28,8 @@ export const Slider = () => {
                   <img className="w-full md:h-[850px]" src={item.img}></img>
                 )}
               </div>
-              <div className="top-44 absolute mx-auto inset-x-1/4">
-                <div className="text-white font-inter font-bold tracking-normal text-4xl">
+              <div className=" top-44 absolute mx-auto inset-x-1/4">
+                <div className=" text-center text-xs text-white font-inter font-bold tracking-normal sm:text-lg md:text-2xl xl:text-4xl ">
                   <p>{parseInt(item.id) === slideIndex && item.text}</p>
                 </div>
               </div>
@@ -37,15 +37,15 @@ export const Slider = () => {
           );
         })}
       </div>
-      <div className="flex absolute bottom-12 left-[45%]">
+      <div className="flex absolute bottom-6 left-[30%] sm:left-[35%] md:left-[45%] md:bottom-12 ">
         {sliderData.map((dot, index) => {
           return (
             <div className="mr-4" key={index}>
               <div
                 className={
                   index === slideIndex
-                    ? "bg-green-300 rounded-full p-4 cursor-pointer"
-                    : "bg-white rounded-full p-4 cursor-pointer hover:bg-gray-300 "
+                    ? "bg-green-300 rounded-full p-3 sm:p-4 cursor-pointer"
+                    : "bg-white rounded-full p-3 sm:p-4 cursor-pointer hover:bg-gray-300 "
                 }
                 onClick={() => dispatch(dotSlide(index))}
               ></div>

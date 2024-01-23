@@ -15,12 +15,12 @@ export const Header = () => {
           Welcome to Store!
         </h3>
       </div>
-      <div className="flex justify-around items-center">
+      <div className="flex  justify-between items-center">
       <Link to="/" >
           <img className="h-28 w-full" src={logo} alt="store"></img>
         </Link>
         <div className="flex flex-row items-center">
-          <div className="flex flex-row items-center cursor-pointer">
+          {/* <div className="flex flex-row items-center cursor-pointer">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -38,7 +38,7 @@ export const Header = () => {
             <p className="text-black font-inter text-base font-medium tracking-normal leading-none text-center mr-2 mt-1">
               Whish List
             </p>
-          </div>
+          </div> */}
           <div
             className="flex flex-row items-center cursor-pointer"
             onClick={() => handleOpen()}

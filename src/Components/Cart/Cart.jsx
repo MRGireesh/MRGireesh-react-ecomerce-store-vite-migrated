@@ -58,8 +58,7 @@ export const Cart = ({ openModel, setOpen }) => {
                             <span
                               className="ml-2 rounded-full px-2"
                               style={{ background: product.color }}
-                            >
-                            </span>
+                            ></span>
                           </p>
                           <p className=" text-black text-base font-inter tracking-normal leading-none px-4 py-1 ">
                             Amount{" "}
@@ -84,7 +83,7 @@ export const Cart = ({ openModel, setOpen }) => {
                               color="red"
                               ripple={true}
                               variant="filled"
-                              onClick={()=>dispatch(removeFromCart(product))}
+                              onClick={() => dispatch(removeFromCart(product))}
                             >
                               Remove
                             </Button>
@@ -99,11 +98,13 @@ export const Cart = ({ openModel, setOpen }) => {
             <DialogFooter className="flex justify-start items-center">
               <p className=" text-black text-base font-inter tracking-normal leading-none p-4 ">
                 {" "}
-                Total price of all products <span> ₹ {cartState.totalPrice}</span>
+                Total price of all products{" "}
+                <span> ₹ {cartState.totalPrice}</span>
               </p>
+              <p className="text-center justify-self-center">click and hold on outside the white-box to close the pop-up</p>
             </DialogFooter>
           </Dialog>
-        </Fragment>
+      </Fragment>
       ) : (
         <Fragment>
           <Dialog

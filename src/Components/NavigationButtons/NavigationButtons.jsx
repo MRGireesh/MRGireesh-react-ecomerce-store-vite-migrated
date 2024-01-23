@@ -19,7 +19,7 @@ export const NavigationButtons = () => {
 
   return (
 
-      <div className="flex item-center justify-center py-8">
+      <div className="flex item-center justify-center py-8 sm:max-w-full flex-wrap gap-2">
         {buttons.map((button, index) => {
           return (
             <div key={index} className="mr-4">
@@ -29,7 +29,7 @@ export const NavigationButtons = () => {
                 size="lg"
                 variant="outlined"
                 ripple={true}
-                className="hove:bg-green-300 duration-300 ease-in-out"
+                className="hove:bg-green-300 duration-300 ease-in-out sm:w-200"
                 onClick={() => dispatch(filterProducts(button))}
               >
                 {button}
