@@ -1,4 +1,4 @@
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/header.png";
 import { useState } from "react";
 import { Cart } from "../Cart/Cart";
 import { useSelector } from "react-redux";
@@ -12,7 +12,7 @@ export const Header = () => {
     <>
       <div className="bg-black p-2 w-full">
         <h3 className="text-white font-inter text-2xl font-bold tracking-normal leading-none text-center">
-          Welcome to Store!
+          Welcome to SilkVoyage!
         </h3>
       </div>
       <div className="flex  justify-between items-center">
