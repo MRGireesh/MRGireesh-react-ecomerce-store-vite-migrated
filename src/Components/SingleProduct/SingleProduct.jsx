@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { Tooltip, Button } from "@material-tailwind/react";
@@ -14,6 +14,10 @@ export const SingleProduct = () => {
 
   const { id } = useParams();
   const dispatch = useDispatch();
+  useEffect (() => {
+    // scroll to top on page load
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
 
   return (
     <div>
