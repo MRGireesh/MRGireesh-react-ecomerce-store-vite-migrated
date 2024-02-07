@@ -11,21 +11,21 @@ export const Slider = () => {
   const slideIndex = useSelector((state) => state.slider.value);
   const dispatch = useDispatch();
   return (
-    <div className="relative pb-4">
-      <div>
+    <div className="relative pb-4 md:w-[90%] md:relative md:top-[50%] md:left-[50%]  md:translate-x-[-50%]">
+      <div className="bg-no-repeat bg-gray-500 bg-[url('/src/assets/images/bg_shoes.png')] bg-center">
         {sliderData.map((item) => {
           return (
             <div
               key={item.id}
               className={
                 parseInt(item.id) === slideIndex
-                  ? "opacity-100 duration-700 ease-in-out scale-100"
-                  : "opacity-0 duration-700 ease-in-out scale-95"
+                  ? "opacity-100 duration-1000 ease-in-out scale-100"
+                  : "opacity-0 blur-sm duration-1000 ease-in-out scale-95"
               }
             >
               <div>
                 {parseInt(item.id) === slideIndex && (
-                  <img className="w-full md:h-[850px]" src={item.img}></img>
+                  <img className="w-full h-[300px] md:h-[700px] md:min-h-[700px]" src={item.img}></img>
                 )}
               </div>
               <div className=" top-44 absolute mx-auto inset-x-1/4">
